@@ -2,6 +2,10 @@ import ShareButton from "@/components/ui/share-button";
 import { Link } from "lucide-react";
 import { Oswald } from "next/font/google";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
+import HeroImage from '@/public/assats/hero-image.jpg'
+import LatestListing from "./components/LatestListing";
+import AboutHero from "./components/AboutHero";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -17,13 +21,14 @@ const oswald = Oswald({
 
 export default function Home() {
   return (
+    <>
     <div className="responsive-container text-white">
       <div className="flex mt-10">
         <h1 className={`text-6xl ${oswald.className} font-bold w-[60%]`}>
           Helping you find more then just a{" "}
           <span className="text-[#10B981]">house</span>
         </h1>
-        <div className="w-[40%] mt-5">
+        <div className="w-[40%] mt-20">
           <ShareButton className="text-lg font-medium">
             <Link size={15} />
             SOCIAL
@@ -34,8 +39,10 @@ export default function Home() {
           </p>
         </div>
       </div>
-
-
+      <Image className="rounded-2xl w-full h-[600px] my-14" src={HeroImage} alt="hero" width={1000} height={800} />
     </div>
+    <LatestListing/>
+    <AboutHero/>
+    </>
   );
 }
