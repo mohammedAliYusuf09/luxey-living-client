@@ -7,6 +7,8 @@ import HeroImage from '@/public/assats/hero-image.jpg'
 import LatestListing from "./components/LatestListing";
 import AboutHero from "./components/AboutHero";
 import TestimonialCarousel from "./components/TestimonialCarousel";
+import Consultation from "./components/Consultation";
+import TipsInsits from "./components/TipsInsits";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -45,6 +47,8 @@ export default function Home() {
     <LatestListing/>
     <AboutHero/>
     <TestimonialCarousel />
+    <Consultation/>
+    <TipsInsits/>
     </>
   );
 }

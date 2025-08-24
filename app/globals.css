@@ -95,6 +95,25 @@
   color: #10B981;
 }
 
+
+.bg-grid-blue {
+  background-color: #007bff; /* Base blue background */
+  background-image: 
+    linear-gradient(to right, #ffffff0d 1px, transparent 1px),
+    linear-gradient(to bottom, #ffffff0d 1px, transparent 1px);
+  background-size: 64px 64px; /* Size of each grid cell */
+  margin: 0;
+}
+
+.bg-grid-white {
+  background-color: #f3f5f7; /* Base blue background */
+  background-image: 
+    linear-gradient(to right, #5070c90d 2px, transparent 2px),
+    linear-gradient(to bottom, #5070c90d 2px, transparent 2px);
+  background-size: 40px 40px; /* Size of each grid cell */
+  margin: 0;
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
