@@ -48,7 +48,7 @@ const properties: Property[] = [
 ];
 
 
-const cardWidthPercentage = 80;
+const cardWidthPercentage = 90;
 const sideCardPercentage = 10;
 const horizontalShiftPercentage = 100 - sideCardPercentage;
 
@@ -93,7 +93,7 @@ export const Carousel = () => {
           {properties.map((property, index) => (
             <motion.div
               key={property.id}
-              className={`absolute w-[${cardWidthPercentage}%] h-auto md:h-[500px] flex flex-col bg-gray-800 rounded-lg overflow-hidden shadow-lg`}
+              className={`absolute min-w-[${cardWidthPercentage}%] h-auto md:h-[500px] flex flex-col bg-gray-800 rounded-lg overflow-hidden shadow-lg`}
               variants={variants}
               initial={{ opacity: 0, x: `${horizontalShiftPercentage}%` }}
               animate={
@@ -203,9 +203,7 @@ export const Carousel = () => {
         </button>
       </div>
 
-      <Link href={"/properties"}  className="bg-gray-200 hover:bg-white text-black px-2 py-1 rounded-sm font-semibold cursor-pointer mt-6">
-        EXPLORE MORE
-      </Link>
+
     </div>
   );
 };
