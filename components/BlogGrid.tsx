@@ -2,6 +2,7 @@
 
 import Image, { StaticImageData } from 'next/image';
 import BlogImage from '@/public/assats/blog-image.png'
+import Link from 'next/link';
 
 // Define a TypeScript interface for the blog post data.
 // This ensures type safety for your data.
@@ -57,7 +58,7 @@ const BlogGrid = () => {
   return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
-            <div
+            <Link href={`/blogs/${post.id}`}
               key={post.id}
               className="bg-[#14171C] p-1 sm:p-2 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 border border-[#194133]"
             >
@@ -76,7 +77,7 @@ const BlogGrid = () => {
                   Posted: {post.date}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
   );

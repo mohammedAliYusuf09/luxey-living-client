@@ -1,18 +1,20 @@
 import Image from 'next/image';
 import propertyLimage from '@/public/assats/blog-image.png'
 import React from 'react'
+import Link from 'next/link';
 
 // --- Property Card Component ---
 interface PropertyCardProps {
+  id: string
   title: string;
   location: string;
   price: string;
   size: string;
 }
 
-function PropertyCard({ title, location, price, size }: PropertyCardProps) {
+function PropertyCard({ title, location, price, size, id }: PropertyCardProps) {
   return (
-    <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
+    <Link href={`/properties/${id}`} className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
       <div className="relative h-48 w-full">
         <Image src={propertyLimage} alt='property image' layout="fill" objectFit="cover" />
       </div>
@@ -24,7 +26,7 @@ function PropertyCard({ title, location, price, size }: PropertyCardProps) {
           <span className="text-sm">{size}</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
