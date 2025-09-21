@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ProgressBar } from "./ProgressBar";
-import { Property } from "../lib/types";
+import { Property } from "../app/lib/types";
 import cur1 from "@/public/assats/cur1.png";
 import cur2 from "@/public/assats/cur2.jpg";
 import cur3 from "@/public/assats/cur3.jpg";

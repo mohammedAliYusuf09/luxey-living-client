@@ -4,11 +4,11 @@ import { Oswald } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import HeroImage from '@/public/assats/hero-image.jpg'
-import LatestListing from "./components/LatestListing";
-import AboutHero from "./components/AboutHero";
-import TestimonialCarousel from "./components/TestimonialCarousel";
-import Consultation from "./components/Consultation";
-import TipsInsits from "./components/TipsInsits";
+import LatestListing from "../components/LatestListing";
+import AboutHero from "../components/AboutHero";
+import TestimonialCarousel from "../components/TestimonialCarousel";
+import Consultation from "../components/Consultation";
+import TipsInsits from "../components/TipsInsits";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
