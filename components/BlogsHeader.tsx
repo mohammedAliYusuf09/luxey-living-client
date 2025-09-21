@@ -1,7 +1,6 @@
 import React from 'react'
 
-import { Montserrat, Oswald, Inter } from "next/font/google";
-import { Carousel } from "./Carousel";
+import { Montserrat, Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,10 +16,7 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const oswald = Oswald({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // choose weights you need
-});
+
 
 function BlogsHeader() {
   return (
