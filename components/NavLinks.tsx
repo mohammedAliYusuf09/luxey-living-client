@@ -15,11 +15,11 @@ function NavLinks() {
      const pathname = usePathname();
   return (
     <ul className={`hidden md:flex gap-4 font-light ${montserrat.className} text-white`}>
-      <Link className={`hover:text-[#10B981] ${pathname === '/' ? 'text-[#10B981]' : ''}`} href={"/"}>Home</Link>
-      <Link className={`hover:text-[#10B981] ${pathname === '/properties' ? 'text-[#10B981]' : ''}`} href={"/properties"}>Properties</Link>
-      <Link className={`hover:text-[#10B981] ${pathname === '/blogs' ? 'text-[#10B981]' : ''}`} href={"/blogs"}>Blogs</Link>
-      <Link className={`hover:text-[#10B981] ${pathname === '/about' ? 'text-[#10B981]' : ''}`} href={"/about"}>About</Link>
-      <Link className={`hover:text-[#10B981] ${pathname === '/contact' ? 'text-[#10B981]' : ''}`} href={"/contact"}>Contact</Link>
+      <Link className={`hover:text-action ${pathname === '/' ? 'text-action' : ''}`} href={"/"}>Home</Link>
+      <Link className={`hover:text-action ${pathname === '/properties' ? 'text-action' : ''}`} href={"/properties"}>Properties</Link>
+      <Link className={`hover:text-action ${pathname === '/blogs' ? 'text-action' : ''}`} href={"/blogs"}>Blogs</Link>
+      <Link className={`hover:text-action ${pathname === '/about' ? 'text-action' : ''}`} href={"/about"}>About</Link>
+      <Link className={`hover:text-action ${pathname === '/contact' ? 'text-action' : ''}`} href={"/contact"}>Contact</Link>
     </ul>
   )
 }

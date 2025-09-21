@@ -44,7 +44,7 @@ function MobileMenu() {
   return (
     <div className="md:hidden">
       <span
-        className="text-3xl text-[#10B981]"
+        className="text-3xl text-action"
         onClick={() => setIsMenuOpen(true)}
       >
         <FiMenu />

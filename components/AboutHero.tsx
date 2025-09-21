@@ -26,8 +26,8 @@ function AboutHero() {
           >
             <h4 className="text-xl lg:text-2xl xl:text-3xl font-light text-gray-400 text-center md:text-left">MY NAME IS</h4>
             <h2 className="text-3xl lg:text-4xl xl:text-5xl font-normal text-center md:text-left">James Carter</h2>
-            <p className="bg-[#14171C] px-4 py-2 text-xl lg:text-2xl xl:text-3xl font-light max-w-[500px] text-[#10B981]
-            border border-[#10B981] text-center md:text-left">
+            <p className="bg-[#14171C] px-4 py-2 text-xl lg:text-2xl xl:text-3xl font-light max-w-[500px] text-action
+            border border-action text-center md:text-left">
               Your Trusted Real Estate Expert in Austin, TX
             </p>
             <p className={`text-sm font-light leading-6 text-center md:text-left px-10 md:px-0`}>

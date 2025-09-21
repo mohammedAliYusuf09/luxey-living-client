@@ -29,7 +29,7 @@ export default function Home() {
       <div className="flex mt-10">
         <h1 className={`text-6xl ${oswald.className} font-bold w-[60%]`}>
           Helping you find more then just a{" "}
-          <span className="text-[#10B981]">house</span>
+          <span className="text-action">house</span>
         </h1>
         <div className="w-[40%] mt-20">
           <ShareButton className="text-lg font-medium">
