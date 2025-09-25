@@ -1,8 +1,12 @@
-import React from 'react'
+import *as motion from 'motion/react-client';
 
 function PropertyFilter() {
   return (
-      <section className="bg-socendary py-10 md:py-16 -mt-20 relative z-[2] mx-auto max-w-6xl rounded-lg shadow-xl px-4 md:px-8">
+      <motion.section 
+      initial={{ opacity: 0.5 , y: 20}}
+          animate={{ opacity: 1, y: 0}}
+          transition={{ ease: "easeInOut", duration: 0.5}}
+      className="bg-socendary py-10 md:py-16 -mt-20 relative z-[2] mx-auto max-w-6xl rounded-lg shadow-xl px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <input
             type="text"
@@ -53,7 +57,7 @@ function PropertyFilter() {
         <button className="w-full bg-action text-white py-3 rounded-md text-lg font-semibold hover:bg-green-800 transition-colors">
           Search
         </button>
-      </section>
+      </motion.section>
   )
 }
 

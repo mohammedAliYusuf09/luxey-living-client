@@ -3,13 +3,13 @@
 'use client';
 
 import React, { useRef, useState } from 'react';
-import { motion, useMotionValue } from 'framer-motion';
 import avater1 from '@/public/assats/tst-avt1.png'
 import avater2 from '@/public/assats/tst-avt2.png'
 import avater3 from '@/public/assats/tst-avt3.png'
 import avater4 from '@/public/assats/tst-avt-4.png'
 import TestimonialCard from './TestimonialCard';
 import { Oswald } from 'next/font/google';
+import { motion , useMotionValue} from "motion/react";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -58,7 +58,11 @@ const TestimonialCarousel: React.FC = () => {
   };
 
  return (
-    <div className="bg-[#14171C] py-16 px-4">
+    <motion.div 
+    initial={{ scaleY: 1.8}}
+    transition={{ duration: 0.5, ease: "easeIn", delay: 0.8}}
+    whileInView={{ scaleY: 1}}
+    className="bg-[#14171C] py-16 px-4">
       <h2 className={`${oswald.className} text-center font-blold text-4xl text-white mb-12`}>Trusted by Homebyers and Sellers</h2>
       <div className="overflow-hidden scrollbar-hide">
         <motion.div
@@ -83,7 +87,7 @@ const TestimonialCarousel: React.FC = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

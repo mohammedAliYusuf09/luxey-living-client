@@ -1,13 +1,18 @@
 import React from 'react'
+import * as motion from "motion/react-client";
 
 function contact() {
   return (
-     <main className="responsive-container py-14">
+     <main className="responsive-container pt-24 pb-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Section: Get in Touch & Form */}
           <div>
             <h1 className="text-5xl font-bold text-white mb-8">
-              Get in <span className="text-action">Touch</span>
+              Get in <motion.span 
+              initial={{ opacity: 0.2}}
+              animate={{ opacity: 1}}
+              transition={{ ease: "easeInOut", duration:0.8}}
+              className="text-action">Touch</motion.span>
             </h1>
 
             <form className="space-y-6">

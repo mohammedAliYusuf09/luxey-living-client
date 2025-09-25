@@ -8,7 +8,7 @@ import React from 'react'
 
 function about() {
   return (
-    <main>
+    <main className='pt-14'>
       <AboutHero/>
       <WorkShow/>
       <Stranth />

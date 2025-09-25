@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import ProImage from '@/public/assats/propertyshero.jpg'
+import *as motion from 'motion/react-client';
 
 function PropertyHero() {
   return (
@@ -12,9 +13,13 @@ function PropertyHero() {
           className="brightness-[.4]" // Darken the image
         />
         <div className="relative z-[1] text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+          <motion.h1 
+          initial={{ opacity: 0.1 , scale: 0.3}}
+          animate={{ opacity: 1, scale: 1}}
+          transition={{ ease: "easeInOut", duration: 0.5}}
+          className="text-5xl md:text-7xl font-bold text-white leading-tight">
             Discover What&apos;s on <br /> the Market
-          </h1>
+          </motion.h1>
         </div>
       </section>
   )
