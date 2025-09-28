@@ -41,3 +41,9 @@ export interface filterProps {
   minPrice: string | '',
   maxPrice: string | '',
 }
+
+export interface WhyWorkWithMeItem {
+  title: string;
+  description: string;
+}
+

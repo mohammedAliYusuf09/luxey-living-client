@@ -1,4 +1,4 @@
-import { PropertyFull } from "./types";
+import { PropertyFull, WhyWorkWithMeItem } from "./types";
 
 export const  data : PropertyFull = {
   "_id": "654321cba987654321fedcba",
@@ -27,3 +27,26 @@ export const  data : PropertyFull = {
   "updatedAt": "2025-09-22T08:30:00.000Z",
   "__v": 1
 }
+
+export const whyWorkWithMeData: WhyWorkWithMeItem[] = [
+  {
+    title: "Deep Knowledge of the Local Market",
+    description:
+      "With years of experience in the local real estate landscape, I understand every neighborhood — from school districts and commute routes to upcoming developments. I use that insight to match you with the right property at the right time.",
+  },
+  {
+    title: "Personalized Client Approach",
+    description:
+      "Your goals are my priority. I take the time to listen, understand your unique needs, and tailor my strategy to achieve the best outcomes, whether you're buying, selling, or investing.",
+  },
+  {
+    title: "Expert Negotiation Skills",
+    description:
+      "Securing the best deal requires a keen eye and strong negotiation tactics. I am a skilled negotiator, dedicated to protecting your interests and maximizing your investment.",
+  },
+  {
+    title: "Seamless Transaction Management",
+    description:
+      "From initial consultation to closing, I manage every detail of your real estate transaction. You can expect clear communication, proactive problem-solving, and a stress-free experience.",
+  },
+];

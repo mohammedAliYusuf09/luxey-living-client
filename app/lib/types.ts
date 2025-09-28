@@ -19,3 +19,6 @@ export interface Property {
   yearBuilt: number;
   imageUrl: StaticImageData;
 }
+
+
+

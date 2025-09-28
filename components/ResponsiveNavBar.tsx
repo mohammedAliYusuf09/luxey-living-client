@@ -32,25 +32,8 @@ function ResponsiveNavBar() {
     }
   });
 
-  // const [scrolled, setScrolled] = useState<boolean>(false);
-  // const [hidden, setHidden] = useState<boolean>(false); 
-  // const {scrollY} = useScroll();
-
-  // useMotionValueEvent(scrollY, "change", (latest) => {
-
-  //   setScrolled(latest > 20 ? true : false);
-    
-
-  //   const pre = scrollY.getPrevious();
-  //   if (pre !== undefined && latest > pre && latest > 150) {
-  //     setHidden(true)
-  //   } else {
-  //     setHidden(false)
-  //   }
-  // })
-
   return (
-<motion.nav
+    <motion.nav
       // Variants define the animation states
       variants={{
         visible: { y: "0%", opacity: 1 },

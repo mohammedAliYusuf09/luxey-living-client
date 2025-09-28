@@ -19,9 +19,10 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
+
 function PropertyDetailes() {
   return (
-    <section className='responsive-container'>
+    <section className='responsive-container pt-14'>
       <ImageGallery images={data.images}/>
       <h2 className={`text-3xl font-medium  text-white mt-6 ${montserrat.className}`}>{data.title}</h2>
       <p className={`text-lg font-normal mt-2 text-gray-400 ${inter.className}`}>{data.summary}</p>

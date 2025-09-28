@@ -3,7 +3,7 @@ import BlogImage from '@/public/assats/blog-image.png'
 
 function BlogDetailes() {
   return (
-    <section className="responsive-container my-14">
+    <section className="responsive-container pt-24 pb-14">
           {/* Featured Image */}
           <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden shadow-xl">
             <Image

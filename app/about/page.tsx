@@ -1,8 +1,8 @@
 import AboutHero from '@/components/AboutHero'
 import Consultation from '@/components/Consultation'
-import Stranth from '@/components/Stranth'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
 import TipsInsits from '@/components/TipsInsits'
+import { WhyWorkWithMe } from '@/components/WhyWorkWithMe'
 import WorkShow from '@/components/WorkShow'
 import React from 'react'
 
@@ -11,7 +11,7 @@ function about() {
     <main className='pt-14'>
       <AboutHero/>
       <WorkShow/>
-      <Stranth />
+      <WhyWorkWithMe />
       <TestimonialCarousel />
       <TipsInsits/>
       <Consultation/>
