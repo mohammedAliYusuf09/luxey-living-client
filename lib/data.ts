@@ -50,3 +50,6 @@ export const whyWorkWithMeData: WhyWorkWithMeItem[] = [
       "From initial consultation to closing, I manage every detail of your real estate transaction. You can expect clear communication, proactive problem-solving, and a stress-free experience.",
   },
 ];
+
+
+export const dummyhtml = "<p>Real estate remains one of the most reliable ways to build wealth, whether through rental income, property appreciation, or house flipping. With shifting market trends, technological advancements, and economic factors influencing the industry, 2025 presents unique opportunities for investors.</p><p>In this guide, we’ll cover:</p><p><br>✅ Why Real Estate is a Smart Investment in 2025<br>✅ Different Ways to Invest in Real Estate<br>✅ Emerging Trends Shaping the Market<br>✅ Tips for First-Time Investors</p><p></p><p>Final chack sfda sasdsa</p>"
