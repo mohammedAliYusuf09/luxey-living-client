@@ -2,6 +2,7 @@ import React from 'react'
 import PropertyCard from './PropertyCard'
 
 
+
 function PropertyListings() {
   return (
     <section className="container mx-auto px-4 py-16">

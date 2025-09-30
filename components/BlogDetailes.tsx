@@ -10,7 +10,6 @@ function BlogDetailes() {
             Modern 3-Bedroom Family Home in Austin, Texas
           </h1>
           <div className="html-content text-gray-300 text-lg leading-7  md:text-xl md:leading-8" dangerouslySetInnerHTML={{ __html: dummyhtml }} />
-  
     </section>
   )
 }
