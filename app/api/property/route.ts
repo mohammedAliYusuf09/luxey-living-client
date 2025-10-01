@@ -56,6 +56,7 @@ export async function GET(request: NextRequest) {
 
         return new Response(JSON.stringify(properties));
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
        return NextResponse.json(
       { error: "Failed to fetch propertys" },

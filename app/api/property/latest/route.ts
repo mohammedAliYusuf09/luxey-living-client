@@ -18,6 +18,7 @@ export async function GET() {
      console.log(latestPropertys);
 
      return new Response(JSON.stringify(latestPropertys));
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     return NextResponse.json(
         { error: "Latest property could not be found" },
