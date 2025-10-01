@@ -1,6 +1,5 @@
 import { connectToDatabase } from "@/lib/dbConnect";
 import Blog from "@/models/blog";
-import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
@@ -11,27 +10,25 @@ export async function GET(request: NextRequest) {
 
     const id = searchParams.get("id");
 
-    if(!id){
-        return NextResponse.json(
-        { error: "Id is required" },
-        { status: 501 }
-        )
+    if (!id) {
+      return NextResponse.json({ error: "Id is required" }, { status: 501 });
     }
 
     const blogDetails = await Blog.findById(id);
 
-    if(!blogDetails){
-        return NextResponse.json(
-            {error: "Blog could not be found"},
-            { status: 500 }
-        )
+    if (!blogDetails) {
+      return NextResponse.json(
+        { error: "Blog could not be found" },
+        { status: 500 }
+      );
     }
 
-    return new Response(JSON.stringify(blogDetails))
+    return new Response(JSON.stringify(blogDetails));
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     return NextResponse.json(
-            {error: "Blog could not be found"},
-            { status: 400 }
-        )
+      { error: "Blog could not be found" },
+      { status: 400 }
+    );
   }
 }
