@@ -24,30 +24,24 @@ const transporter = nodemailer.createTransport({
 export async function POST(request: NextRequest){
     try {
         const {name, email} = await request.json();
-        
         if(!name){
             return NextResponse.json(
                 { error: "Name is required" }, { status: 301 }
             )
         }
-
         if(!email){
             return NextResponse.json(
                 { error: "Email is required" }, { status: 301 }
             )
         }
-
         const client = await Client.create({name, email});
-
         if(!client){
             return NextResponse.json(
                 {erron: "Client could not be created"},
                 {status: 501}
             )
         }
-
         // send a mail
-
         // 3. Define mail options
         const mailOptions = {
             from: SENDER_EMAIL, // Must be an authorized sender email
@@ -55,12 +49,8 @@ export async function POST(request: NextRequest){
             subject: "Your Free Real Estate Consultation is Confirmed!",
             text: `${name} Thank you for booking your complimentary real estate consultation! I'm looking forward to connecting with you to discuss your goals and how we can achieve them.`,
         };
-
         await transporter.sendMail(mailOptions);
-
         return NextResponse.json({ message: "Email sent successfully!" })
-
-  
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
         return NextResponse.json(
@@ -68,6 +58,4 @@ export async function POST(request: NextRequest){
       { status: 400 }
     );
     }
-
-    
 }
